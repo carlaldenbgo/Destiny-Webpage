@@ -1,0 +1,358 @@
+@font-face
+{
+  font-family: 'futurafont';
+  src: url('/fonts/FTR45__C.ttf') format('truetype');
+}
+*
+{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body
+{
+  margin: 0;
+}
+
+.hero-container
+{
+  display:flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://thathashtagshow.com/wp-content/uploads/2019/01/destiny-2-huge-hero-06-ps4-us-25may17.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.destiny-div
+{
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 85px;
+  padding: 0px;
+}
+
+#destiny2
+{
+  font-family:"Roboto Mono";
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0;
+}
+
+.classes-container
+{
+  width: 100vw;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://d1lss44hh2trtw.cloudfront.net/assets/article/2019/08/08/destiny-2-all-classes-subclasses-and-perk-trees_feature.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.classes-header
+{
+  font-family:"Roboto Mono";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0;
+  text-align: center;
+  font-size: 55px;
+}
+
+.card-container
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.card
+{
+  background: white;
+  width: 270px;
+  margin: 10px;
+  border-radius: 15px;
+  flex-grow: 1;
+}
+
+.card h2
+{
+  font-family: Garamond;
+  text-align: center;
+  font-size: 30px;
+}
+
+.card p
+{
+  padding: 20px;
+  font-family: "Yantramanav";
+}
+
+.card a
+{
+  padding: 30px 30px;
+  background-color: black;
+  color:white;
+  display: block;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  text-decoration: none;
+}
+
+.card-img
+{
+  background-color: aqua;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card:hover
+{
+  background-color: rgb(62,62,62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 0.2s ease;
+}
+
+.titan
+{
+  background-image: url('https://d1lss44hh2trtw.cloudfront.net/assets/article/2020/06/30/destiny-2-exotic-titan-armor_feature.jpg');
+}
+.hunter
+{
+  background-image: url('https://d1lss44hh2trtw.cloudfront.net/assets/article/2020/07/01/destiny-2-exotic-hunter-armor_feature.jpg');
+}
+.warlock
+{
+  background-image: url('https://wallpaperaccess.com/full/114993.jpg');
+}
+
+.image-gallery
+{
+  width: 100vw;
+  height: auto;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://www.teahub.io/photos/full/230-2302611_destiny-hunter-wallpaper-destiny-2-all-classes.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.gallery-header-div
+{
+  font-family:"Yantramanav";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0;
+  text-align: center;
+  padding: 30px;
+  font-size: 55px;
+}
+
+.gallery-div
+{
+  display: grid;
+  grid-template-columns: repeat(5, [col-start] 1fr);
+  gap: 20px;
+
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
+  margin: 5px;
+}
+
+.gallery-image img
+{
+  width: 100%;
+}
+
+.striker
+{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+.stasis
+{
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 3;
+}
+.sunbreaker
+{
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 2;
+}
+.sentinel
+{
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 1;
+}
+.arcstrider
+{
+  grid-column: 5 / span 1;
+  grid-row: 4 / span 1;
+}
+.gunslinger
+{
+  grid-column: 5 / span 1;
+  grid-row: 2 / span 2;
+}
+.nightstalker
+{
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+}
+.dawnblade
+{
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+
+}
+.stormcaller
+{
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+}
+.voidwalker
+{
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+}
+
+@media screen and (max-width: 1000px)
+{
+  .gallery-div
+  {
+    display: grid;
+    grid-template-columns: repeat(3, [col-start] 1fr);
+    gap: 20px;
+
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    margin: 5px;
+  }
+  .striker
+  {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .stasis
+  {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+  }
+  .sunbreaker
+  {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 2;
+  }
+  .sentinel
+  {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .arcstrider
+  {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .gunslinger
+  {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 2;
+  }
+  .nightstalker
+  {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .dawnblade
+  {
+    grid-column: 2 / span 1;
+    grid-row: 6 / span 1;
+  }
+  .stormcaller
+  {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+  }
+  .voidwalker
+  {
+    grid-column: 3 / span 1;
+    grid-row: 6 / span 1;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  .gallery-div
+  {
+    display: grid;
+    grid-template-columns: repeat(1, [col-start] 1fr);
+    gap: 20px;
+
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    margin: 5px;
+  }
+  .striker
+  {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .stasis
+  {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .sunbreaker
+  {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+  }
+  .sentinel
+  {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+  .arcstrider
+  {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .gunslinger
+  {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 2;
+  }
+  .nightstalker
+  {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 1;
+  }
+  .dawnblade
+  {
+    grid-column: 1 / span 1;
+    grid-row: 9 / span 2;
+  }
+  .stormcaller
+  {
+    grid-column: 1 / span 1;
+    grid-row: 8 / span 1;
+  }
+  .voidwalker
+  {
+    grid-column: 1 / span 1;
+    grid-row: 10 / span 1;
+  }
+}
